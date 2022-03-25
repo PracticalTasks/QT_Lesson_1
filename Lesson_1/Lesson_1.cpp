@@ -41,10 +41,11 @@ void Lesson_1::pushRes()
         x2 = (-b + qSqrt(discr)) / 2 * a;
         str = QString::number(x1);
         QString tmpStr = QString::number(x2);
-        ui.label_4->setText("X1 = " + str + "; X2 = " + tmpStr);
+        ui.label_4->setText("X1 = " + str + ", X2 = " + tmpStr);
     }
     else
     {
-        ui.label_4->setText("Корней нет");
+      
+        ui.label_4->setText("РќРµС‚ РєРѕСЂРЅРµР№");
     }
 }
