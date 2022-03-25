@@ -9,8 +9,7 @@ Lesson_1::Lesson_1(QWidget *parent)
 
 void Lesson_1::pushRes()
 {
-    
-    QString str = ui.lineEdit->text();
+    QString str = ui.lineEdit_1->text();
     double a = str.toDouble();
     str = ui.lineEdit_2->text();
     double b = str.toDouble();
