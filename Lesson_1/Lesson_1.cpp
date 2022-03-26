@@ -69,12 +69,6 @@ void Lesson_1::on_pushButton_2()
         alpha = qDegreesToRadians(alpha);
     }
 
-    //alpha = qCos(alpha);
-    //if (alpha < 0)
-    //{
-    //    alpha = 0;
-    //}
-
     double a = qSqrt(b * b + c * c - 2 * b * c * qCos(alpha));
     str = QString::number(a);
     ui.label_11->setText("Сторона a = " + str);
