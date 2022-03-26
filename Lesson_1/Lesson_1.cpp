@@ -4,10 +4,15 @@ Lesson_1::Lesson_1(QWidget *parent)
     : QMainWindow(parent)
 {
     ui.setupUi(this);
-    QObject::connect(ui.pushButton, SIGNAL(clicked()), this, SLOT(pushRes()));
+    QObject::connect(ui.pushButton, SIGNAL(clicked()), this, SLOT(on_pushButton()));
+
+    //Task 2
+    ui.radioButton_2->setChecked(true);
+    QObject::connect(ui.pushButton_2, SIGNAL(clicked()), this, SLOT(on_pushButton_2()));
 }
 
-void Lesson_1::pushRes()
+//Task 1
+void Lesson_1::on_pushButton()
 {
     QString str = ui.lineEdit_1->text();
     double a = str.toDouble();
@@ -47,4 +52,31 @@ void Lesson_1::pushRes()
       
         ui.label_4->setText("Нет корней");
     }
+}
+
+//Task 2
+void Lesson_1::on_pushButton_2()
+{
+    QString str = ui.lineEdit_4->text();
+    double b = str.toDouble();
+    str = ui.lineEdit_5->text();
+    double c = str.toDouble();
+    str = ui.lineEdit_6->text();
+    double alpha = str.toDouble();
+
+    if (ui.radioButton->isChecked())
+    {
+        alpha = qDegreesToRadians(alpha);
+    }
+
+    //alpha = qCos(alpha);
+    //if (alpha < 0)
+    //{
+    //    alpha = 0;
+    //}
+
+    double a = qSqrt(b * b + c * c - 2 * b * c * qCos(alpha));
+    str = QString::number(a);
+    ui.label_11->setText("Сторона a = " + str);
+
 }

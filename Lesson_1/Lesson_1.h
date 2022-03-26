@@ -14,8 +14,9 @@ private:
     Ui::Lesson_1Class ui;
 
 private slots:
-    
-    void pushRes();
+    void on_pushButton();
+    void on_pushButton_2();
+
 
 };
 
