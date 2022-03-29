@@ -9,6 +9,11 @@ Lesson_1::Lesson_1(QWidget *parent)
     //Task 2
     ui.radioButton_2->setChecked(true);
     QObject::connect(ui.pushButton_2, SIGNAL(clicked()), this, SLOT(on_pushButton_2()));
+    
+    //Task 3
+    QObject::connect(ui.pushButton_3, SIGNAL(clicked()), this, SLOT(on_pushButton_3()));
+    QObject::connect(ui.pushButton_4, SIGNAL(clicked()), this, SLOT(on_pushButton_4()));
+    QObject::connect(ui.pushButton_5, SIGNAL(clicked()), this, SLOT(on_pushButton_5()));
 }
 
 //Task 1
@@ -73,4 +78,21 @@ void Lesson_1::on_pushButton_2()
     str = QString::number(a);
     ui.label_11->setText("Сторона a = " + str);
 
+}
+
+//Task 3
+void Lesson_1::on_pushButton_3()
+{
+    ui.textEdit_2->setPlainText(ui.textEdit_2->toPlainText() + ui.textEdit->toPlainText());
+}
+
+void Lesson_1::on_pushButton_4()
+{
+    ui.textEdit_2->setText(ui.textEdit->toPlainText());
+}
+
+void Lesson_1::on_pushButton_5()
+{
+    QString str = "<font color='red'>Hello HTML</font>";
+    ui.textEdit_2->setHtml(str);
 }

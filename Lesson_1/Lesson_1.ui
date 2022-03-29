@@ -69,41 +69,14 @@
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
       </property>
      </widget>
-     <widget class="QLabel" name="label_5">
-      <property name="lineWidth">
-       <number>1</number>
-      </property>
-      <property name="text">
-       <string>x^2 +</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
      <widget class="QLineEdit" name="lineEdit_2">
       <property name="alignment">
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
       </property>
      </widget>
-     <widget class="QLabel" name="label_6">
-      <property name="text">
-       <string>b +</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
      <widget class="QLineEdit" name="lineEdit_3">
       <property name="alignment">
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_7">
-      <property name="text">
-       <string>c = 0</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </widget>
@@ -162,40 +135,40 @@
     <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
-       <x>50</x>
+       <x>10</x>
        <y>30</y>
-       <width>16</width>
-       <height>16</height>
+       <width>111</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string>b</string>
+      <string>сторона B</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_9">
      <property name="geometry">
       <rect>
-       <x>181</x>
+       <x>140</x>
        <y>30</y>
-       <width>16</width>
-       <height>16</height>
+       <width>121</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string>c</string>
+      <string>сторона C</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_10">
      <property name="geometry">
       <rect>
-       <x>313</x>
+       <x>270</x>
        <y>30</y>
-       <width>24</width>
-       <height>16</height>
+       <width>71</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string>угол</string>
+      <string>угол Alpha</string>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_2">
@@ -208,7 +181,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Расчитать сторону</string>
+      <string>Расчитать сторону A</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_11">
@@ -276,6 +249,84 @@
      </property>
      <property name="text">
       <string>Радианы</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>289</y>
+      <width>581</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Task 3</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>30</y>
+       <width>75</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Добавить</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>70</y>
+       <width>75</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Заменить</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>30</y>
+       <width>75</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>Вставить</string>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>104</width>
+       <height>71</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>30</y>
+       <width>104</width>
+       <height>71</height>
+      </rect>
      </property>
     </widget>
    </widget>

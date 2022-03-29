@@ -16,8 +16,9 @@ private:
 private slots:
     void on_pushButton();
     void on_pushButton_2();
-
-
+    void on_pushButton_3();
+    void on_pushButton_4();
+    void on_pushButton_5();
 };
 
 
