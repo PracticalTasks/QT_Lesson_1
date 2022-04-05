@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>601</width>
-    <height>400</height>
+    <width>614</width>
+    <height>485</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,117 +17,316 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>-1</x>
-      <y>-1</y>
-      <width>611</width>
-      <height>121</height>
+      <x>0</x>
+      <y>0</y>
+      <width>581</width>
+      <height>141</height>
      </rect>
     </property>
     <property name="title">
-     <string>Task 1</string>
+     <string>Task 1. Вычесление корней квадратного уровнения </string>
     </property>
-    <widget class="QLineEdit" name="lineEdit">
+    <widget class="QPushButton" name="pushButton">
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>30</y>
-       <width>161</width>
+       <y>80</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Вычислить корни</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>80</y>
+       <width>331</width>
        <height>21</height>
       </rect>
      </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     <property name="text">
+      <string/>
      </property>
+    </widget>
+    <widget class="QSplitter" name="splitter">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>50</y>
+       <width>561</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLineEdit" name="lineEdit_1">
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
     </widget>
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>10</y>
-       <width>171</width>
-       <height>20</height>
+       <y>30</y>
+       <width>152</width>
+       <height>16</height>
       </rect>
      </property>
      <property name="text">
       <string>Введите первый коэфицент</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_2">
-     <property name="geometry">
-      <rect>
-       <x>180</x>
-       <y>30</y>
-       <width>161</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_2">
-     <property name="geometry">
-      <rect>
-       <x>180</x>
-       <y>10</y>
-       <width>171</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Введите второй коэфицент</string>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
-       <x>370</x>
-       <y>10</y>
-       <width>171</width>
-       <height>20</height>
+       <x>383</x>
+       <y>30</y>
+       <width>139</width>
+       <height>16</height>
       </rect>
      </property>
      <property name="text">
       <string>Введите свободный член</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_3">
+    <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>370</x>
+       <x>200</x>
        <y>30</y>
-       <width>161</width>
-       <height>21</height>
+       <width>150</width>
+       <height>16</height>
       </rect>
      </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     <property name="text">
+      <string>Введите второй коэфицент</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>140</y>
+      <width>581</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Task 2. Расчёт стороны треугольника</string>
+    </property>
+    <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
-       <x>370</x>
-       <y>60</y>
-       <width>161</width>
+       <x>10</x>
+       <y>30</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>сторона B</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>30</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>сторона C</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>30</y>
+       <width>71</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>угол Alpha</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>80</y>
+       <width>131</width>
        <height>51</height>
       </rect>
      </property>
      <property name="text">
-      <string>Результат</string>
+      <string>Расчитать сторону A</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_4">
+    <widget class="QLabel" name="label_11">
      <property name="geometry">
       <rect>
-       <x>0</x>
-       <y>50</y>
-       <width>161</width>
-       <height>61</height>
+       <x>148</x>
+       <y>90</y>
+       <width>241</width>
+       <height>16</height>
       </rect>
      </property>
      <property name="text">
       <string/>
+     </property>
+    </widget>
+    <widget class="QSplitter" name="splitter_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>50</y>
+       <width>396</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLineEdit" name="lineEdit_4">
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_5">
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_6">
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QRadioButton" name="radioButton">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>60</y>
+       <width>89</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Градусы</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_2">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>40</y>
+       <width>89</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Радианы</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>289</y>
+      <width>581</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Task 3</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>30</y>
+       <width>75</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Добавить</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>70</y>
+       <width>75</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Заменить</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>30</y>
+       <width>75</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>Вставить</string>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>104</width>
+       <height>71</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>30</y>
+       <width>104</width>
+       <height>71</height>
+      </rect>
      </property>
     </widget>
    </widget>
@@ -137,7 +336,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>601</width>
+     <width>614</width>
      <height>22</height>
     </rect>
    </property>
